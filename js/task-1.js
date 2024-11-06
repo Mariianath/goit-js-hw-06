@@ -20,3 +20,10 @@ const customer = {
     this.orders.push(order);
   },
 };
+
+customer.setDiscount(0.15);
+console.log("Discount after setting:", customer.getDiscount()); 
+
+customer.addOrder(5000, "Steak");
+console.log("Balance after adding order:", customer.getBalance());
+console.log("Orders after adding order:", customer.getOrders()); 
